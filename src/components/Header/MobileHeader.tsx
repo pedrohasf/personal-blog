@@ -1,5 +1,5 @@
 import React from "react";
-import { FiBookmark, FiHome, FiX } from "react-icons/fi";
+import { FiBookmark, FiHome, FiPhoneCall, FiX } from "react-icons/fi";
 
 interface Props {
   setIsOpen: (isOpen: boolean) => void;
@@ -29,15 +29,22 @@ const MobileHeader: React.FC<Props> = ({ setIsOpen }: Props) => {
                     href="/"
                     className="border-t -m-3 p-3 flex items-center space-x-4 hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900"
                   >
-                    <FiHome className="mr-2 text-blue-500" size={20} />
+                    <FiHome className="mr-2 text-indigo-500" size={20} />
                     Home
                   </a>
                   <a
                     href="/blog"
                     className="border-t -m-3 p-3 flex items-center space-x-4 hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900"
                   >
-                    <FiBookmark className="mr-2 text-blue-500" size={20} />
+                    <FiBookmark className="mr-2 text-indigo-500" size={20} />
                     Blog
+                  </a>
+                  <a
+                    href="/contact"
+                    className="border-t -m-3 p-3 flex items-center space-x-4 hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900"
+                  >
+                    <FiPhoneCall className="mr-2 text-indigo-500" size={20} />
+                    Contact
                   </a>
                 </nav>
               </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { AiFillCode } from "react-icons/ai";
 import MobileHeader from "./MobileHeader";
 
 const BlogHeader: React.FC = () => {
@@ -8,9 +9,12 @@ const BlogHeader: React.FC = () => {
     <div className="relative bg-white border-b border-cool-gray-300 shadow-md">
       <div className="flex md:w-11/12 md:m-auto justify-beclassNameeen items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
         <div className="flex justify-between items-center w-full">
-          <div className="w-48">
-            <a href="/" className="flex items-center">
-              <img className="" src="/logo.png" alt="Logo" />
+          <div>
+            <a
+              href="/"
+              className="flex items-center font-mono text-gray-900 font-bold text-lg md:text-xl"
+            >
+              <AiFillCode size={28} className="mr-2" /> Pedro Fernandes
             </a>
           </div>
           <div className="md:hidden">
@@ -35,6 +39,12 @@ const BlogHeader: React.FC = () => {
             className="whitespace-nowrap font-mont text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Blog
+          </a>
+          <a
+            href="/contact"
+            className="whitespace-nowrap font-mont text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+          >
+            Contact
           </a>
         </div>
 
